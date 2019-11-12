@@ -1,0 +1,35 @@
+<h2> ADD A TASK </h2>
+
+<%= render 'form', task: @task %>
+
+<br>
+
+<%= link_to "see list of tasks", tasks_path(@task)%>
+
+<!-- <form action="/tasks" method="post">
+  <%#= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <label for="title">Title: </label>
+  <input type="string" title="task[title]" id="title">
+
+  <label for="detail">detail: </label>
+  <input type="text" detail="task[detail]" id="detail">
+
+  <label for="completed">completed: </label>
+  <input type="boolean" completed="task[completed]" id="completed">
+
+  <input type="submit">
+</form> -->
+
+
+<%#= form_for(@task) do |f| %>
+  <%#= f.label :title %>
+  <%#= f.text_field :title %>
+
+  <%#= f.label :details %>
+  <%#= f.text_field :details %>
+
+  <%#= f.label :completed %>
+  <%#= f.text_field :completed %>
+
+  <%#= f.submit %>
+<%# end %>
